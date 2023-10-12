@@ -1,12 +1,16 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@hookform/resolvers':
     specifier: ^3.3.1
     version: 3.3.1(react-hook-form@7.46.2)
   '@kinde-oss/kinde-auth-nextjs':
-    specifier: ^1.8.18
-    version: 1.8.18(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^1.8.21
+    version: 1.8.21(react-dom@18.2.0)(react@18.2.0)
   '@mantine/hooks':
     specifier: ^7.0.1
     version: 7.0.1(react@18.2.0)
@@ -393,12 +397,13 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: false
 
-  /@kinde-oss/kinde-auth-nextjs@1.8.18(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-sewXEWkFA7lRMjZT4quoHglWDZHpknj5BKAFil2c+mnP/Abq++Isay/UzQQV3ykDN5koi0hlGmNr/w5umhyUhw==}
+  /@kinde-oss/kinde-auth-nextjs@1.8.21(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-Qf22qO6J9tE0/3BzsbwXNe3/l8J/ZWSpBtJO8w3RozQGMQjKF/WAPEFbbT6y1VvuxctA9txbeNGtvk4C+uZVHA==}
     peerDependencies:
       react: ^18.1.0
       react-dom: ^18.1.0
     dependencies:
+      '@kinde-oss/kinde-typescript-sdk': 2.2.1
       cookie: 0.5.0
       crypto: 1.0.1
       crypto-js: 4.1.1
@@ -408,6 +413,12 @@ packages:
       simple-oauth2: 4.3.0
     transitivePeerDependencies:
       - supports-color
+    dev: false
+
+  /@kinde-oss/kinde-typescript-sdk@2.2.1:
+    resolution: {integrity: sha512-mm6AvOZotjnqfSeIiyxeeUNNPua4QSadvLrpLRWFg9mCKT66LNQ0A8ZQz6ajCoWiJXjpy+qFaBko3ac4LEqsPw==}
+    dependencies:
+      uncrypto: 0.1.3
     dev: false
 
   /@mantine/hooks@7.0.1(react@18.2.0):
@@ -5554,6 +5565,10 @@ packages:
       has-bigints: 1.0.2
       has-symbols: 1.0.3
       which-boxed-primitive: 1.0.2
+    dev: false
+
+  /uncrypto@0.1.3:
+    resolution: {integrity: sha512-Ql87qFHB3s/De2ClA9e0gsnS6zXG27SkTiSJwjCc9MebbfapQfuPzumMIUMi38ezPZVNFcHI9sUIepeQfw8J8Q==}
     dev: false
 
   /unified@10.1.2:
