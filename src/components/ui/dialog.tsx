@@ -10,7 +10,6 @@ const Dialog = DialogPrimitive.Root
 
 const DialogTrigger = DialogPrimitive.Trigger
 
-// Extend the DialogPortalProps to include className
 type ExtendedDialogPortalProps = DialogPrimitive.DialogPortalProps & {
   className?: string;
 };
@@ -21,6 +20,7 @@ const DialogPortal = ({
 }: ExtendedDialogPortalProps) => (
   <DialogPrimitive.Portal className={cn(className)} {...props} />
 );
+
 DialogPortal.displayName = DialogPrimitive.Portal.displayName;
 
 // For DialogOverlay, since you're using React.ComponentPropsWithoutRef, 
