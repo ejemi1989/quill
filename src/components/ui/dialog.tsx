@@ -16,7 +16,6 @@ type ExtendedDialogPortalProps = DialogPrimitive.DialogPortalProps & {
 
 const DialogPortal = ({
    className,
- 
   ...props
 }: ExtendedDialogPortalProps) => (
   <DialogPrimitive.Portal className={cn(className)} {...props} />
