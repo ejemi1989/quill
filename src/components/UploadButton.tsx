@@ -8,7 +8,7 @@ import {
 } from './ui/dialog'
 import { Button } from './ui/button'
 
-import {useDropzone} from 'react-dropzone';
+import Dropzone from 'react-dropzone'
 import { Cloud, File, Loader2 } from 'lucide-react'
 import { Progress } from './ui/progress'
 import { useUploadThing } from '@/lib/uploadthing'
@@ -59,13 +59,6 @@ const UploadDropzone = ({
     return interval
   }
 
-
-function Dropzone(props) {
-  const {getRootProps, getInputProps, open, acceptedFiles} = useDropzone({
-    // Disable click and keydown behavior
-    noClick: true,
-    noKeyboard: true
-  });
   return (
     <Dropzone
       multiple={false}
